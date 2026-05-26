@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 26 Bulan Mei 2026 pada 07.45
+-- Waktu pembuatan: 26 Bulan Mei 2026 pada 08.06
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.4.27
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `2526_24`
+-- Struktur dari tabel `users`
 --
 
-CREATE TABLE `2526_24` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
@@ -40,10 +40,10 @@ CREATE TABLE `2526_24` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `2526_24`
+-- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `2526_24` (`id`, `username`, `password`, `role`, `nama_lengkap`, `tanggal_lahir`, `alamat`, `jenis_kelamin`, `jurusan`) VALUES
+INSERT INTO `users` (`id`, `username`, `password`, `role`, `nama_lengkap`, `tanggal_lahir`, `alamat`, `jenis_kelamin`, `jurusan`) VALUES
 (14, 'admin', '123', 'admin', 'admin utama', '2026-05-25', 'disini', 'Perempuan', 'TJKT'),
 (21, 'mita', '123', 'siswa', 'mita sugiarti', '2008-10-03', 'mekarsari', 'Perempuan', 'TJKT'),
 (22, 'sisy', '123', 'siswa', 'sisy juliasari', '2009-07-27', 'jelekong\r\n', 'Perempuan', 'TJKT');
@@ -53,9 +53,9 @@ INSERT INTO `2526_24` (`id`, `username`, `password`, `role`, `nama_lengkap`, `ta
 --
 
 --
--- Indeks untuk tabel `2526_24`
+-- Indeks untuk tabel `users`
 --
-ALTER TABLE `2526_24`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -63,9 +63,9 @@ ALTER TABLE `2526_24`
 --
 
 --
--- AUTO_INCREMENT untuk tabel `2526_24`
+-- AUTO_INCREMENT untuk tabel `users`
 --
-ALTER TABLE `2526_24`
+ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
